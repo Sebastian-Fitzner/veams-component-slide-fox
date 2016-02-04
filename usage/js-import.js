@@ -1,1 +1,0 @@
-import SlideFox from './modules/slide-fox/slide-fox';
