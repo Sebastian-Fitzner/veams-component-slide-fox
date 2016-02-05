@@ -7,7 +7,7 @@ This blueprint is based on the blueprint of Veams-Components.
 ### Include: Page
 
 ``` hbs
-{{! @INSERT :: START @id: slide-fox, @tag: component
+{{! @INSERT :: START @id: slide-fox, @tag: component-partial }}
 <h2>We need some demo text to see the slide fox in action!</h2>
 {{#times 20}}
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo facilis, ipsum itaque necessitatibus nisi nulla ut veniam veritatis voluptate. Blanditiis consectetur, error excepturi exercitationem facilis ipsum labore nobis odit.</p>
@@ -24,7 +24,7 @@ This blueprint is based on the blueprint of Veams-Components.
 ### Include: SCSS
 
 ``` scss
-// @INSERT :: START @id: scss-import, @tag: component
+// @INSERT :: START @id: scss-import
 @import "components/_c-slide-fox";
 // @INSERT :: END
 ```
@@ -33,14 +33,14 @@ This blueprint is based on the blueprint of Veams-Components.
 
 #### Import
 ``` js
-// @INSERT :: START @id: js-import, @tag: component
+// @INSERT :: START @id: js-import
 import SlideFox from './modules/slide-fox/slide-fox';
 // @INSERT :: END
 ```
 
 #### Initializing in Veams V2
 ``` js
-// @INSERT :: START @id: js-init-v2, @tag: component
+// @INSERT :: START @id: js-init-v2
 /**
  * Init Form
  */
@@ -54,7 +54,7 @@ Helpers.loadModule({
 
 #### Initializing in Veams V3
 ``` js
-// @INSERT :: START @id: js-init-v3, @tag: component
+// @INSERT :: START @id: js-init-v3
 /**
  * Init Form
  */
