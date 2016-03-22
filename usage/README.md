@@ -2,6 +2,9 @@
 
 This blueprint is based on the blueprint of Veams-Components.
 
+## Requirements 
+- `Veams-JS`
+
 ## Usage
 
 ### Include: Page
