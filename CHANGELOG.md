@@ -1,3 +1,6 @@
+### v1.0.3
+- added global module registry
+
 ### v1.0.2
 - changed id to tag
 

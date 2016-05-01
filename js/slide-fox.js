@@ -1,5 +1,8 @@
 /**
- * @module Slide Fox
+ * Represents an element that slides into view when it's scrolled into viewport.
+ *
+ * @module SlideFox
+ * @version v1.0.3
  *
  * @author Andy Gutsche
  * @refactoring Sebastian Fitzner
@@ -27,6 +30,19 @@ class SlideFox extends AppModule {
 		};
 
 		super(obj, options);
+		App.registerModule && App.registerModule(SlideFox.info, this.el);
+	}
+
+	/**
+	 * Get module information
+	 */
+	static get info() {
+		return {
+			name: 'SlideFox',
+			version: '1.0.3',
+			vc: true,
+			mod: false // set to true if source was modified in project
+		};
 	}
 
 	bindEvents() {
