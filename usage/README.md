@@ -1,4 +1,4 @@
-# Gallery Link
+# Slide Fox
 
 This blueprint is based on the blueprint of Veams-Components.
 
