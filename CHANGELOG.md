@@ -1,3 +1,6 @@
+### v1.0.4
+- pass element instead of jQuery object to Helpers.isInViewport
+
 ### v1.0.3
 - added global module registry
 
