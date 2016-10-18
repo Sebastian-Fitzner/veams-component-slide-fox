@@ -7,7 +7,9 @@ This blueprint is based on the blueprint of Veams-Components.
 Latest version is ```v2.0.0```
 
 ## Requirements
-- `Veams-JS`
+
+### JavaScript
+- `Veams-JS >= v3.6.0`
 
 ## Usage
 

@@ -6,8 +6,10 @@ This blueprint is based on the blueprint of Veams-Components.
 
 Latest version is ```v2.0.0```
 
-## Requirements 
-- `Veams-JS`
+## Requirements
+
+### JavaScript
+- `Veams-JS >= v3.6.0`
 
 ## Usage
 
@@ -31,7 +33,7 @@ Latest version is ```v2.0.0```
 ### Include: SCSS
 
 ``` scss
-// @INSERT :: START @tag: scss-import 
+// @INSERT :: START @tag: scss-import
 @import "components/_c-slide-fox";
 // @INSERT :: END
 ```
@@ -40,14 +42,14 @@ Latest version is ```v2.0.0```
 
 #### Import
 ``` js
-// @INSERT :: START @tag: js-import 
+// @INSERT :: START @tag: js-import
 import SlideFox from './modules/slide-fox/slide-fox';
 // @INSERT :: END
 ```
 
 #### Initializing in Veams V2
 ``` js
-// @INSERT :: START @tag: js-init-v2 
+// @INSERT :: START @tag: js-init-v2
 /**
  * Init SlideFox
  */
@@ -61,7 +63,7 @@ Helpers.loadModule({
 
 #### Initializing in Veams V3
 ``` js
-// @INSERT :: START @tag: js-init-v3  
+// @INSERT :: START @tag: js-init-v3
 /**
  * Init SlideFox
  */
