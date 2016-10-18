@@ -2,6 +2,10 @@
 
 This blueprint is based on the blueprint of Veams-Components.
 
+## Version
+
+Latest version is ```v2.0.0```
+
 ## Requirements 
 - `Veams-JS`
 

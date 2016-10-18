@@ -2,7 +2,7 @@
  * Represents an element that slides into view when it's scrolled into viewport.
  *
  * @module SlideFox
- * @version v1.0.4
+ * @version v2.0.0
  *
  * @author Andy Gutsche
  * @refactoring Sebastian Fitzner
@@ -39,16 +39,16 @@ class SlideFox extends AppModule {
 	static get info() {
 		return {
 			name: 'SlideFox',
-			version: '1.0.4',
+			version: '2.0.0',
 			vc: true,
 			mod: false // set to true if source was modified in project
 		};
 	}
 
 	bindEvents() {
-		let render = this.render.bind(this);
+		let fnRender = this.render.bind(this);
 
-		App.Vent.on(App.EVENTS.scroll, render);
+		App.Vent.on(App.EVENTS.scroll, fnRender);
 	}
 
 	showSlideFox() {
