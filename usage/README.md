@@ -49,7 +49,7 @@ import SlideFox from './modules/slide-fox/slide-fox';
 ``` js
 // @INSERT :: START @tag: js-init-v2 
 /**
- * Init Form
+ * Init SlideFox
  */
 Helpers.loadModule({
 	el: '[data-js-module="slide-fox"]',
@@ -63,7 +63,7 @@ Helpers.loadModule({
 ``` js
 // @INSERT :: START @tag: js-init-v3  
 /**
- * Init Form
+ * Init SlideFox
  */
 Helpers.loadModule({
 	domName: 'slide-fox',
