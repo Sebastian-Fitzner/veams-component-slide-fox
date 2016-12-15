@@ -1,12 +1,14 @@
 {
-	"options": {
-		"contextClass": false,
-		"modifierClasses": false,
-		"jsOptions": [
-			{
-				"jsKey": "",
-				"jsValue": ""
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Slide Fox (Default)",
+				"sectionCenter": true
+			},
+			"settings": {
+				"slideFoxContextClass": "default",
+				"slideFoxClasses": false
 			}
-		]
+		}
 	}
 }

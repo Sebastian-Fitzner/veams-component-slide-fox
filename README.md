@@ -1,76 +1,50 @@
+<p align="right">
+    <a href="https://badge.fury.io/bo/veams-component-slide-fox"><img src="https://badge.fury.io/bo/veams-component-slide-fox.svg" alt="Bower version" height="20"></a>
+    <a href="https://gitter.im/Sebastian-Fitzner/Veams?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img src="https://badges.gitter.im/Sebastian-Fitzner/Veams.svg" alt="Gitter Chat" /></a>
+</p>
+
 # Slide Fox
 
-This blueprint is based on the blueprint of Veams-Components.
+## Description
 
-## Version
+Represents an element that slides into view when it's scrolled into viewport.
 
-Latest version is ```v2.0.0```
+-----------
 
 ## Requirements
 
 ### JavaScript
-- `Veams-JS >= v3.6.0`
+`Veams-JS >= v4.0.0` - Basic JavaScript library.
 
-## Usage
+-----------
 
-### Include: Page
+## Installation
 
-``` hbs
-{{! @INSERT :: START @id: slide-fox, @tag: component-partial }}
-<h2>We need some demo text to see the slide fox in action!</h2>
-{{#times 20}}
-	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo facilis, ipsum itaque necessitatibus nisi nulla ut veniam veritatis voluptate. Blanditiis consectetur, error excepturi exercitationem facilis ipsum labore nobis odit.</p>
-{{/times}}
+### Installation with Veams
 
-{{#with slide-fox-bp}}
-	{{#wrapWith "c-slide-fox"}}
-		<a href="#">Link to another page.</a>
-	{{/wrapWith}}
-{{/with}}
-{{! @INSERT :: END }}
-```
+`veams install vc slide-fox`
 
-### Include: SCSS
+### Installation with Bower
 
-``` scss
-// @INSERT :: START @tag: scss-import
-@import "components/_c-slide-fox";
-// @INSERT :: END
-```
+`bower install veams-component-slide-fox --save`
 
-### Include: JavaScript
+-----------
 
-#### Import
-``` js
-// @INSERT :: START @tag: js-import
-import SlideFox from './modules/slide-fox/slide-fox';
-// @INSERT :: END
-```
+## Fields
 
-#### Initializing in Veams V2
-``` js
-// @INSERT :: START @tag: js-init-v2
-/**
- * Init SlideFox
- */
-Helpers.loadModule({
-	el: '[data-js-module="slide-fox"]',
-	module: SlideFox,
-	context: context
-});
-// @INSERT :: END
-```
+### `c-slide-fox.hbs`
 
-#### Initializing in Veams V3
-``` js
-// @INSERT :: START @tag: js-init-v3
-/**
- * Init SlideFox
- */
-Helpers.loadModule({
-	domName: 'slide-fox',
-	module: SlideFox,
-	context: context
-});
-// @INSERT :: END
-```
+The partial is a `wrapWith` partial.
+
+#### Settings
+- settings.slideFoxContextClass {`String`} [default] - _Context class of component._
+- settings.slideFoxClasses {`String`} - _Modifier classes for component._
+- settings.slideFoxJsOptions {`Object`} - _JavaScript options which gets stringified._
+
+-------------
+
+## JavaScript Options
+
+The module gives you the possibility to override default options:
+
+- visibleClass {`String`} ['is-visible'] - _Class to be set when Slide Fox becomes visible._
