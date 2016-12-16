@@ -18,5 +18,9 @@ jsFiles:
 {{/times}}
 
 {{#wrapWith "c-slide-fox" settings=this.settings}}
-	<a href="#">Link to another page.</a>
+	{{#with @root.article-bp.variations.default}}
+		{{#wrapWith "c-article" settings=this.settings content=this.content}}
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam architecto atque cupiditate dicta earum ex facilis harum incidunt, laboriosam officiis placeat quas recusandae, rerum, sit tempore tenetur. Impedit, velit.
+		{{/wrapWith}}
+	{{/with}}
 {{/wrapWith}}

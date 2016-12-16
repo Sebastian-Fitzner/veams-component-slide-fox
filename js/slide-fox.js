@@ -2,17 +2,17 @@
  * Represents an element that slides into view when it's scrolled into viewport.
  *
  * @module SlideFox
- * @version v2.0.1
+ * @version v2.1.0
  *
  * @author Andy Gutsche
  * @refactoring Sebastian Fitzner
  */
 
-import Helpers from '../../utils/helpers';
-import App from '../../app';
-import AppModule from '../_global/module';
+import App from 'app';
+import AppModule from 'app-module';
 
 const $ = App.$;
+const Helpers = App.Helpers;
 
 class SlideFox extends AppModule {
 	/**
@@ -39,7 +39,7 @@ class SlideFox extends AppModule {
 	static get info() {
 		return {
 			name: 'SlideFox',
-			version: '2.0.1',
+			version: '2.1.0',
 			vc: true,
 			mod: false // set to true if source was modified in project
 		};
