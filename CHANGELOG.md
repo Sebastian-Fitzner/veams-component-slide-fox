@@ -1,3 +1,7 @@
+### v2.1.1
+- Update insertpoints
+- Update comment in sass file
+
 ### v2.1.0
 - Refactor data structure
 - Add all important notes to readme

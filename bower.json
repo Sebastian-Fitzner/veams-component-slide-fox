@@ -1,12 +1,16 @@
 {
 	"name": "veams-component-slide-fox",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"ignore": [
 		".bowerrc",
 		".gitignore",
 		"bower.json"
 	],
 	"authors": [
+		{
+			"name": "Andy Gutsche",
+			"email": "andy@veams.org"
+		},
 		{
 			"name": "Sebastian Fitzner",
 			"email": "sebastian@veams.org"

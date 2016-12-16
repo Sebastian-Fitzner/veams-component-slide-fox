@@ -7,8 +7,8 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo facilis, ipsum itaque necessitatibus nisi nulla ut veniam veritatis voluptate. Blanditiis consectetur, error excepturi exercitationem facilis ipsum labore nobis odit.</p>
 {{/times}}
 
-{{#with slide-fox-bp}}
-	{{#wrapWith "c-slide-fox"}}
+{{#with slide-fox-bp.variations.default}}
+	{{#wrapWith "c-slide-fox" settings=this.settings}}
 		<a href="#">Link to another page.</a>
 	{{/wrapWith}}
 {{/with}}
