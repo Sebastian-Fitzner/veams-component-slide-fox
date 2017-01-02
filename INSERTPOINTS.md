@@ -18,9 +18,9 @@
 ### Include: SCSS
 
 ``` scss
-// @INSERT :: START @tag: scss-import
+// @INSERT :: START @tag: scss-import //
 @import "components/_c-slide-fox";
-// @INSERT :: END
+// @INSERT :: END //
 
 // @INSERT :: START @tag: scss-self-contained-import //
 @import "../templating/partials/components/slide-fox/scss/_c-slide-fox";
@@ -31,9 +31,9 @@
 
 #### Import
 ``` js
-// @INSERT :: START @tag: js-import
+// @INSERT :: START @tag: js-import //
 import SlideFox from './modules/slide-fox/slide-fox';
-// @INSERT :: END
+// @INSERT :: END //
 
 / @INSERT :: START @tag: js-self-contained-import //
 import SlideFox from '../templating/partials/components/slide-fox/js/slide-fox';
@@ -42,7 +42,7 @@ import SlideFox from '../templating/partials/components/slide-fox/js/slide-fox';
 
 #### Initializing
 ``` js
-// @INSERT :: START @tag: js-init-v3
+// @INSERT :: START @tag: js-init-v3 //
 /**
  * Init SlideFox
  */
@@ -51,5 +51,5 @@ Helpers.loadModule({
 	module: SlideFox,
 	context: context
 });
-// @INSERT :: END
+// @INSERT :: END //
 ```

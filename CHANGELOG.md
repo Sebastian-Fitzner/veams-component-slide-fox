@@ -1,3 +1,6 @@
+### v2.1.2
+- Update insertpoints
+
 ### v2.1.1
 - Update insertpoints
 - Update comment in sass file
