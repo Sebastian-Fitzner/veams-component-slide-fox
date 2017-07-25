@@ -12,9 +12,7 @@ Represents an element that slides into view when it's scrolled into viewport.
 -----------
 
 ## Requirements
-
-### JavaScript
-`Veams-JS >= v4.0.0` - Basic JavaScript library.
+- `Veams >= v5.0.0` - Veams Framework.
 
 -----------
 

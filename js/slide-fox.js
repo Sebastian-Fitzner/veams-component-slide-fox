@@ -8,13 +8,14 @@
  * @refactoring Sebastian Fitzner
  */
 
-import App from 'app';
-import AppModule from 'app-module';
+import { Veams } from 'app';
+import VeamsComponent from 'veams/src/js/common/component';
+import isInViewport from 'veams/src/js/utils/helpers/is-in-viewport';
 
-const $ = App.$;
-const Helpers = App.Helpers;
+const $ = Veams.$;
+const Helpers = Veams.helpers;
 
-class SlideFox extends AppModule {
+class SlideFox extends VeamsComponent {
 	/**
 	 * Constructor for our class
 	 *
@@ -30,26 +31,43 @@ class SlideFox extends AppModule {
 		};
 
 		super(obj, options);
-		App.registerModule && App.registerModule(SlideFox.info, this.el);
 	}
+
+	/** =================================================
+	 * GETTER & SETTER
+	 * ================================================ */
 
 	/**
 	 * Get module information
 	 */
 	static get info() {
 		return {
-			name: 'SlideFox',
-			version: '2.1.2',
 			vc: true,
 			mod: false // set to true if source was modified in project
 		};
 	}
 
-	bindEvents() {
-		let fnRender = this.render.bind(this);
+	/** =================================================
+	 * EVENTS
+	 * ================================================ */
 
-		App.Vent.on(App.EVENTS.scroll, fnRender);
+	get subscribe() {
+		return {
+			'{{Veams.EVENTS.scroll}}': 'render'
+		};
 	}
+
+	/** =================================================
+	 * STANDARD METHODS
+	 * ================================================= */
+
+	render() {
+		isInViewport(this.el) ? this.showSlideFox() : this.hideSlideFox();
+	}
+
+	/** =================================================
+	 * CUSTOM SLIDEFOX METHODS
+	 * ================================================= */
 
 	showSlideFox() {
 		this.$el.addClass(this.options.visibleClass);
@@ -59,9 +77,7 @@ class SlideFox extends AppModule {
 		this.$el.removeClass(this.options.visibleClass);
 	}
 
-	render() {
-		Helpers.isInViewport(this.el) ? this.showSlideFox() : this.hideSlideFox();
-	}
+
 }
 
 // Returns the constructor

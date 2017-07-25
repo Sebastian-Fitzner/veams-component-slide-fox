@@ -42,14 +42,14 @@ import SlideFox from '../templating/partials/components/slide-fox/js/slide-fox';
 
 #### Initializing
 ``` js
-// @INSERT :: START @tag: js-init-v3 //
-/**
- * Init SlideFox
- */
-Helpers.loadModule({
-	domName: 'slide-fox',
-	module: SlideFox,
-	context: context
-});
+// @INSERT :: START @tag: js-init-v5 //
+    ,
+    /**
+     * Init SlideFox
+     */
+    {
+        namespace: 'slide-fox',
+        module: SlideFox
+    }
 // @INSERT :: END //
 ```
