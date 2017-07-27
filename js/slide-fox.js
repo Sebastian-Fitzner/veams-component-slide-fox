@@ -2,7 +2,7 @@
  * Represents an element that slides into view when it's scrolled into viewport.
  *
  * @module SlideFox
- * @version v2.1.2
+ * @version v3.0.1
  *
  * @author Andy Gutsche
  * @refactoring Sebastian Fitzner
@@ -42,6 +42,7 @@ class SlideFox extends VeamsComponent {
 	 */
 	static get info() {
 		return {
+			version: '3.0.1',
 			vc: true,
 			mod: false // set to true if source was modified in project
 		};
