@@ -18,12 +18,8 @@
 ### Include: SCSS
 
 ``` scss
-// @INSERT :: START @tag: scss-import //
-@import "components/_c-slide-fox";
-// @INSERT :: END //
-
 // @INSERT :: START @tag: scss-self-contained-import //
-@import "../templating/partials/components/slide-fox/scss/_c-slide-fox";
+@import "../components/slide-fox/scss/_c-slide-fox";
 // @INSERT :: END //
 ```
 
@@ -31,12 +27,8 @@
 
 #### Import
 ``` js
-// @INSERT :: START @tag: js-import //
-import SlideFox from './modules/slide-fox/slide-fox';
-// @INSERT :: END //
-
 / @INSERT :: START @tag: js-self-contained-import //
-import SlideFox from '../templating/partials/components/slide-fox/js/slide-fox';
+import SlideFox from '../components/slide-fox/js/slide-fox';
 // @INSERT :: END //
 ```
 
