@@ -1,5 +1,5 @@
 <p align="right">
-    <a href="https://badge.fury.io/bo/veams-component-slide-fox"><img src="https://badge.fury.io/bo/veams-component-slide-fox.svg" alt="Bower version" height="20"></a>
+<a href="https://badge.fury.io/js/veams-component-slide-fox"><img src="https://badge.fury.io/js/veams-component-slide-fox.svg" alt="npm version" height="18"></a>
     <a href="https://gitter.im/Sebastian-Fitzner/Veams?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img src="https://badges.gitter.im/Sebastian-Fitzner/Veams.svg" alt="Gitter Chat" /></a>
 </p>
 
@@ -21,10 +21,6 @@ Represents an element that slides into view when it's scrolled into viewport.
 ### Installation with Veams
 
 `veams install vc slide-fox`
-
-### Installation with Bower
-
-`bower install veams-component-slide-fox --save`
 
 -----------
 
