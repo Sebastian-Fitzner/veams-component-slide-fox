@@ -1,3 +1,5 @@
+## Usage
+
 ### Include: Page
 
 ``` hbs
@@ -15,24 +17,10 @@
 {{! @INSERT :: END }}
 ```
 
-### Include: SCSS
-
-``` scss
-// @INSERT :: START @tag: scss-self-contained-import //
-@import "../components/slide-fox/scss/_c-slide-fox";
-// @INSERT :: END //
-```
-
 ### Include: JavaScript
 
-#### Import
-``` js
-/ @INSERT :: START @tag: js-self-contained-import //
-import SlideFox from '../components/slide-fox/js/slide-fox';
-// @INSERT :: END //
-```
+#### Initializing in Veams V5
 
-#### Initializing
 ``` js
 // @INSERT :: START @tag: js-init-v5 //
     ,
