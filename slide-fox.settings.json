@@ -1,15 +1,14 @@
 {
 	"type": "component",
-	"displayName": "c-slide-fox",
 	"contextData": "slide-fox-bp",
 	"layout": "lyt-docs",
 	"subTemplates": [
-		"c-slide-fox.hbs"
+		"templates/slide-fox.hbs"
 	],
 	"scssFiles": [
-		"_c-slide-fox.scss"
+		"styles/_slide-fox.scss"
 	],
 	"jsFiles": [
-		"slide-fox.js"
+		"scripts/slide-fox.js"
 	]
 }

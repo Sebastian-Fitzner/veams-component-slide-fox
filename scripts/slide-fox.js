@@ -2,18 +2,17 @@
  * Represents an element that slides into view when it's scrolled into viewport.
  *
  * @module SlideFox
- * @version v5.0.0
+ * @version v5.1.0
  *
  * @author Andy Gutsche
  * @refactoring Sebastian Fitzner
  */
 
-import { Veams } from 'app';
-import VeamsComponent from 'veams/src/js/common/component';
-import isInViewport from 'veams/src/js/utils/helpers/is-in-viewport';
+import { Veams } from 'app.veams';
+import VeamsComponent from 'veams/lib/common/component';
+import isInViewport from 'veams-helpers/lib/detection/is-in-viewport';
 
 const $ = Veams.$;
-const Helpers = Veams.helpers;
 
 class SlideFox extends VeamsComponent {
 	/**
@@ -42,7 +41,7 @@ class SlideFox extends VeamsComponent {
 	 */
 	static get info() {
 		return {
-			version: '5.0.0',
+			version: '5.1.0',
 			vc: true,
 			mod: false // set to true if source was modified in project
 		};

@@ -10,7 +10,7 @@
 {{/times}}
 
 {{#with slide-fox-bp.variations.default}}
-	{{#wrapWith "c-slide-fox" settings=this.settings}}
+	{{#wrapWith "slide-fox" settings=this.settings}}
 		<a href="#">Link to another page.</a>
 	{{/wrapWith}}
 {{/with}}
@@ -23,13 +23,7 @@
 
 ``` js
 // @INSERT :: START @tag: js-init-v5 //
-    ,
-    /**
-     * Init SlideFox
-     */
-    {
-        namespace: 'slide-fox',
-        module: SlideFox
-    }
+	// Init SlideFox
+	Veams.modules.add({ namespace: 'slide-fox', module: SlideFox });
 // @INSERT :: END //
 ```
