@@ -26,7 +26,7 @@ Represents an element that slides into view when it's scrolled into viewport.
 
 ## Fields
 
-### `c-slide-fox.hbs`
+### `slide-fox.hbs`
 
 The partial is a `wrapWith` partial.
 
