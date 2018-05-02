@@ -9,7 +9,7 @@
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo facilis, ipsum itaque necessitatibus nisi nulla ut veniam veritatis voluptate. Blanditiis consectetur, error excepturi exercitationem facilis ipsum labore nobis odit.</p>
 {{/times}}
 
-{{#with slide-fox-bp.variations.default}}
+{{#with slide-fox.variations.default}}
 	{{#wrapWith "slide-fox" settings=this.settings}}
 		<a href="#">Link to another page.</a>
 	{{/wrapWith}}
@@ -19,11 +19,11 @@
 
 ### Include: JavaScript
 
-#### Initializing in Veams V5
+#### Initializing with @veams/plugin-modules
 
 ``` js
-// @INSERT :: START @tag: js-init-v5 //
-	// Init SlideFox
-	Veams.modules.add({ namespace: 'slide-fox', module: SlideFox });
+// @INSERT :: START @tag: js-init-@1 //
+// Init SlideFox
+Veams.modules.add({ namespace: 'slide-fox', module: SlideFox });
 // @INSERT :: END //
 ```

@@ -1,0 +1,15 @@
+{
+	"type": "component",
+	"contextData": "slide-fox",
+	"displayName": "slide-fox",
+	"layout": "lyt-docs",
+	"subTemplates": [
+		"slide-fox.hbs"
+	],
+	"scssFiles": [
+		"_slide-fox.scss"
+	],
+	"jsFiles": [
+		"slide-fox.js"
+	]
+}

@@ -1,0 +1,29 @@
+{
+	"variations": {
+		"default": {
+			"docs": {
+				"variationName": "Slide Fox (Default)",
+				"sectionCenter": true
+			},
+			"settings": {
+				"slideFoxContextClass": "default",
+				"slideFoxClasses": false,
+				"slideFoxJsOptions": {
+                }
+			}
+		},
+		"fadeInOnce": {
+        	"docs": {
+        		"variationName": "Slide Fox (Static)",
+        		"sectionCenter": true
+        	},
+        	"settings": {
+        	"slideFoxContextClass": "static",
+        	"slideFoxClasses": false,
+        	"slideFoxJsOptions": {
+					"repeatAnimation": false
+        		}
+        	}
+        }
+	}
+}

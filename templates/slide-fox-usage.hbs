@@ -1,4 +1,4 @@
-<h2>We need some demo text to see the slide fox in action!</h2>
+<h2 style="font-size: 1.1em; margin-bottom: 20px;">We need some demo text to see the slide fox in action!</h2>
 {{#times 20}}
 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo facilis, ipsum itaque necessitatibus nisi
 		nulla ut veniam veritatis voluptate. Blanditiis consectetur, error excepturi exercitationem facilis ipsum labore
@@ -6,9 +6,12 @@
 {{/times}}
 
 {{#wrapWith "slide-fox" settings=this.settings}}
-	{{#with @root.article-bp.variations.default}}
-		{{#wrapWith "article" settings=this.settings content=this.content}}
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam architecto atque cupiditate dicta earum ex facilis harum incidunt, laboriosam officiis placeat quas recusandae, rerum, sit tempore tenetur. Impedit, velit.
-		{{/wrapWith}}
-	{{/with}}
+	<h2 style="font-size: 1.5em; margin-top: 20px;">Slide Fox</h2>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum explicabo
+		facilis, ipsum itaque necessitatibus nisi
+		nulla ut veniam veritatis voluptate. Blanditiis consectetur, error
+		excepturi exercitationem facilis ipsum labore
+		nobis odit.
+	</p>
 {{/wrapWith}}

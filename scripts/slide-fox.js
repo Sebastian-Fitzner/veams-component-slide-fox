@@ -2,19 +2,22 @@
  * Represents an element that slides into view when it's scrolled into viewport.
  *
  * @module SlideFox
- * @version v5.1.1
+ * @version v1.0.0
  *
  * @author Andy Gutsche
  * @refactoring Sebastian Fitzner
  */
 
-import { Veams } from 'app.veams';
-import VeamsComponent from 'veams/lib/common/component';
-import isInViewport from 'veams-helpers/lib/detection/is-in-viewport';
+import $ from '@veams/query';
+import Component from '@veams/component';
+import isInViewport from '@veams/helpers/lib/detection/is-in-viewport';
 
-const $ = Veams.$;
+class SlideFox extends Component {
+	/*
+	 * General Properties
+	 */
+	$el = $(this.el);
 
-class SlideFox extends VeamsComponent {
 	/**
 	 * Constructor for our class
 	 *
@@ -24,9 +27,11 @@ class SlideFox extends VeamsComponent {
 	 * @param {Object} obj.el - element which will be saved in this.el
 	 * @param {Object} obj.options - options which will be passed in as JSON object
 	 */
+
 	constructor(obj) {
 		let options = {
-			visibleClass: 'is-visible'
+			visibleClass: 'is-visible',
+			repeatAnimation: true
 		};
 
 		super(obj, options);
@@ -39,9 +44,10 @@ class SlideFox extends VeamsComponent {
 	/**
 	 * Get module information
 	 */
+
 	static get info() {
 		return {
-			version: '5.1.1',
+			version: '1.0.0',
 			vc: true,
 			mod: false // set to true if source was modified in project
 		};
@@ -53,7 +59,7 @@ class SlideFox extends VeamsComponent {
 
 	get subscribe() {
 		return {
-			'{{Veams.EVENTS.scroll}}': 'render'
+			'{{this.context.EVENTS.scroll}}': 'render'
 		};
 	}
 
@@ -62,7 +68,7 @@ class SlideFox extends VeamsComponent {
 	 * ================================================= */
 
 	render() {
-		isInViewport(this.el) ? this.showSlideFox() : this.hideSlideFox();
+		return isInViewport(this.el) ? this.showSlideFox() : this.hideSlideFox();
 	}
 
 	/** =================================================
@@ -71,13 +77,16 @@ class SlideFox extends VeamsComponent {
 
 	showSlideFox() {
 		this.$el.addClass(this.options.visibleClass);
+
+		if (!this.options.repeatAnimation) {
+			// After slide fox is shown once, we just delete the listener on scroll event.
+			this.unregisterEvent('{{this.context.EVENTS.scroll}}', 'render');
+		}
 	}
 
 	hideSlideFox() {
 		this.$el.removeClass(this.options.visibleClass);
 	}
-
-
 }
 
 // Returns the constructor
