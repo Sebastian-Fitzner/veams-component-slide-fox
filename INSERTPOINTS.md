@@ -22,7 +22,7 @@
 #### Initializing with @veams/plugin-modules
 
 ``` js
-// @INSERT :: START @tag: js-init-@1 //
+// @INSERT :: START @tag: js-init-modules-@1 //
 // Init SlideFox
 Veams.modules.add({ namespace: 'slide-fox', module: SlideFox });
 // @INSERT :: END //
