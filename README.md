@@ -1,6 +1,6 @@
 <p align="right">
 <a href="https://badge.fury.io/js/%40veams%2Fcomponent-slide-fox"><img src="https://badge.fury
-.io/js/@veams/component-slide-fox.svg" alt="npm version" height="18"></a>
+.io/js/%40veams%2Fcomponent-slide-fox.svg" alt="npm version" height="18"></a>
     <a href="https://gitter.im/Sebastian-Fitzner/Veams?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge"><img src="https://badges.gitter.im/Sebastian-Fitzner/Veams.svg" alt="Gitter Chat" /></a>
 </p>
 
@@ -37,7 +37,7 @@ veams -i c slide-fox
 
 ### `slide-fox.hbs`
 
-The partial is a `{{#wrapWith}}` helper. Documentation for [wrapWith](https://github.com/Sebastian-Fitzner/mangony-hbs-helper-wrap-with) helper.
+The partial is a `\{{#wrapWith}}` helper. Documentation for [wrapWith](https://github.com/Sebastian-Fitzner/mangony-hbs-helper-wrap-with) helper.
 
 #### Settings
 

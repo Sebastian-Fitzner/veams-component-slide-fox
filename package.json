@@ -1,7 +1,12 @@
 {
 	"name": "@veams/component-slide-fox",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"description": "Represents an element that slides into view when it's scrolled into viewport.",
+	"dependencies": {
+		"@veams/component": "^1.2.3",
+		"@veams/helpers": "^1.2.8",
+		"@veams/query": "^2.2.4"
+	},
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/Veams/component-slide-fox.git"
